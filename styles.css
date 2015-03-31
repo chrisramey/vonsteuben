@@ -1,0 +1,187 @@
+/* Import Roboto from Google Fonts, so that we can use it in our styles */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,200,900);
+
+.container {
+	width: 800px;	/* Fix the width of the container divs */
+	margin: 0 auto;	/* Center the container divs by distributing the left/right margin evenly */
+}
+
+body {
+	font-family: roboto, sans-serif; /* Try roboto, and default to sans-serif if robot is unavailable */
+	margin: 0;
+	padding: 0;
+	background-color: #292929;
+}
+
+header {
+	color: #fff;
+	padding-top: 8px;
+}
+
+#masthead {
+	background-image: url(images/von-steuben-logo.png); /* Von Steuben logo */
+	background-repeat: no-repeat; /* Don't repeat this image, just display once */
+	background-size: contain; /* Size the background so that it's completely contained in the #masthead */
+	padding-left: 134px;
+}
+
+nav {
+	padding-left: 120px;
+}
+
+nav ul {
+	list-style: none;	/* Remove bullet points from list items */
+	overflow: auto;		/* Since list items are floated, make ul expand to contain them */
+	padding: 0;			
+	margin: 0;
+}
+
+nav ul li {
+	float: left; /* Make the list items display next to each other (horizontal menu) */
+}
+
+nav ul li a {
+	display: block; /* Force nav anchors to fill their parent containers in width */
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 6px 16px;
+	border-bottom: 6px solid transparent;
+	font-weight: 200;
+}
+
+/* Styles for the active page (inside the list item whose class name is "active") */
+nav ul li.active a {
+	color: #ff3c3c;
+	border-color: #ff3c3c;
+}
+
+/* Styles for the nav anchors that the mouse is hovering over */
+nav ul li a:hover {
+	color: #ff3c3c;
+	border-color: transparent;
+}
+
+/* Make an exception for when the user hovers over the current page (keep the bottom border) */
+nav ul li.active a:hover {
+	border-color: #ff3c3c;
+}
+
+/* Styles for the page title in the header */
+header h1 {
+	font-size: 60px;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* Styles for the page subtitle in the header */
+header h2 {
+	display: inline-block;
+	font-weight: 300;
+	font-size: 26px;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #3c3c3c;
+	padding: 4px 0;
+}
+
+#main {
+	background-color: #fff;
+	padding: 10px 0;
+}
+
+/* STYLES FOR A "FRAMED" IMAGE */
+/* --------------------------- */
+.frame {
+	border: 1px solid #ddd;
+	padding: 10px;
+	box-shadow: 0 0 4px #ddd;
+}
+
+.frame img {
+	display: block;
+	width: 100%;
+	border: 1px solid #ededed;
+}
+
+.frame p {
+	font-size: 13px;
+	text-align: right;
+	color: #333;
+	font-weight: 300;
+}
+
+.frame p span {
+	font-style: italic;
+	float: right;
+}
+/* ----------------------------- */
+/* END STYLES FOR "FRAMED" IMAGE */
+
+.story {
+	overflow: auto; /* Ensure that story divs contain their floated elements (probably images) */
+}
+
+.story h2 {
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+a {
+	text-decoration: none; /* In general, remove the underlining from anchors */
+}
+
+.story h2 a {
+	color: #FF5E5E;
+}
+
+.story .meta {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+/* Styles for the "Read more" links following each story excerpt */
+/* (the way the links appear is called a "ghost button") */
+.story .readmore {
+	float: right;
+	display: block;
+	padding: 10px 16px;
+	color: #FF8888;
+	border: 1px solid #FF8888;
+	border-radius: 18px;
+	font-size: 12px;
+}
+
+/* Styles for hovering over the "Read more" links */
+.story .readmore:hover {
+	background-color: #FF8888;
+	color: #fff;
+}
+
+footer {
+	background-color: #292929;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 10px 0;
+	border-top: 2px solid #000;
+	overflow:auto;
+}
+
+footer p {
+	margin: 0px;
+}
+
+footer a img {
+	height: 20px;
+}
+
+footer a {
+	display: inline-block;
+	margin-left: 4px;
+}
+
+.pull-right {
+	float: right;
+}

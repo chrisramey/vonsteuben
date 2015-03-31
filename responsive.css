@@ -1,0 +1,77 @@
+/* Styles for screens 800px wide or smaller */
+@media (max-width: 800px) {
+	#masthead {
+		background-size: 34px;
+		background-position: 10px 50%;
+		padding-left: 60px;
+	}
+
+	#masthead h1 {
+		font-size: 30px;
+		font-weight: 200;
+		text-transform: uppercase;
+	}
+
+	#main {
+		padding: 8px;
+	}
+
+	header h2 {
+		display: none; /* Don't display the subtitle */
+	}
+
+	.container {
+		width: 100%; /* Expand the width of the container divs (styled at 800px wide in other CSS file) */
+	}
+
+	.story .readmore {
+		display: block;	/* Expand the width of "Read more" buttons (bigger, so that they're easier to touch with a finger) */
+		float: none;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	nav ul {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	nav ul li a {
+		font-size: 14px;
+		padding: 6px 10px;
+	}
+
+	.frame {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+
+	footer {
+		padding: 10px;
+	}
+
+	footer a {
+		width: 22%;
+		display: inline-block;
+	}
+
+	footer a img {
+		width: 100%;
+		height: auto;
+	}
+
+	footer .pull-right {
+		float: none;
+		margin: 0 auto;
+	}
+
+	footer p {
+		padding: 6px 0;
+		text-align: center;
+	}
+}
